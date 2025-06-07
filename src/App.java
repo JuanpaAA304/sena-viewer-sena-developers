@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import util.ReportGenerator;
+
 public class App {
 
     public static void main(String[] args) {
@@ -33,11 +35,12 @@ public class App {
                     System.out.println(">> Mostrando revistas...");
                     break;
                 case 5:
-                    System.out.println(">> Generando reporte general...");
+                    ReportGenerator.generarReporteGeneral();
                     break;
                 case 6:
-                    System.out.println(">> Generando reporte del día...");
+                    ReportGenerator.generarReporteDelDia();
                     break;
+
                 case 0:
                     System.out.println("Saliendo de la aplicación...");
                     break;
